@@ -1,0 +1,53 @@
+html {
+	background:
+	radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(187,0,51,0) 27%),
+	radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(187,0,51,0) 27%),
+	radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(221,51,85,0) 46%),
+	radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(221,51,85,0) 46%),
+	radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(221,51,85,0) 31%),
+
+	radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(187,0,51,0) 27%) 50px 50px,
+	radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(187,0,51,0) 27%) 50px 50px,
+	radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(221,51,85,0) 46%) 50px 50px,
+	radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(221,51,85,0) 46%) 50px 50px,
+	radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(221,51,85,0) 31%) 50px 50px;
+	background-color:#b03;
+	background-size:100px 100px;
+}
+#container {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 85%;
+  height: auto;
+  position: fixed;
+  top: 11%;
+  left: 100px;
+  background: #ffffff;
+  box-shadow: 2px 1px 10px 1px rgba(0,0,0,1);
+}
+#header {
+    position: fixed;
+    width: 85%;
+    height: 9%;
+    left: 100px;
+    top: 0;
+    background: #ffffff;
+    box-shadow: 2px 1px 4px 1px rgba(0,0,0,1);
+    float: left;
+
+}
+#gameofthedayvote {
+	height: 275px;
+	width: 175px;
+	margin-left: 85.5%;
+	margin-top: 10%;
+	border-color: rgba(0,225,255,0.3);
+  	border-style: solid;
+  	border-width: 1px 0px 1px 1px;
+  	box-shadow: 0px 1px 4px 1px rgba(50,50,50,0.9);
+}
+#logo {
+	font-family: 'Share Tech', sans-serif;
+	color:rgba(200,0,50,1);
+	text-shadow: 2px 10px 10px 10px rgba(50,50,50,1);
+}
