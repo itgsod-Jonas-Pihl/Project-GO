@@ -2,7 +2,7 @@ Project-GO
 ==========
 
 #### Why are we developing Project GO?
-We believe that if gamers are able to easily group up with one another and play their favourite games. With complete strangers we can achieve a stronger and better community for PC gaming. This is where the idea of Project GO orginated
+We believe that if gamers are able to easily group up with one another and play their favourite games. With complete strangers we can achieve a stronger and better community for PC gaming. This is where the idea of Project GO orginated.
 
 #### How are we going to achieve our goal?
 We think that by using an already well known platform such as Steam and integrate it with an easy to use and easy to understand interface that everyone can access we will create a powerful tool for people to connect with each other through gaming.
