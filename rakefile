@@ -1,0 +1,8 @@
+namespace :db do
+
+  task :seed do
+    require './config/environment'
+    DataMapper.auto_migrate!
+    require './db/seedfile'
+  end
+end
