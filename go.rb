@@ -1,7 +1,7 @@
 class GamersOnline < Sinatra::Base
 
   get '/' do
-    slim :'index'
+    slim :index
   end
 
 end
