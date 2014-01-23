@@ -84,6 +84,8 @@ GEM
       rb-kqueue (>= 0.2)
     multi_json (1.8.4)
     rack (1.5.2)
+    rack-protection (1.5.2)
+      rack
     rake (10.1.1)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.3)
@@ -92,17 +94,22 @@ GEM
       ffi (>= 0.5.0)
     rerun (0.8.2)
       listen (~> 1.0.3)
-    sinatra (1.0)
-      rack (>= 1.0)
+    sinatra (1.4.4)
+      rack (~> 1.4)
+      rack-protection (~> 1.4)
+      tilt (~> 1.3, >= 1.3.4)
     slim (2.0.2)
       temple (~> 0.6.6)
       tilt (>= 1.3.3, < 2.1)
     stringex (1.5.1)
     temple (0.6.7)
+<<<<<<< HEAD
     thin (1.6.1)
       daemons (>= 1.0.9)
       eventmachine (>= 1.0.0)
       rack (>= 1.0.0)
+=======
+>>>>>>> origin/Max-branch
     tilt (1.4.1)
     uuidtools (2.1.4)
     websocket-driver (0.3.2)
@@ -113,10 +120,17 @@ PLATFORMS
 DEPENDENCIES
   data_mapper
   dm-sqlite-adapter
+<<<<<<< HEAD
   faye
+=======
+  rack
+>>>>>>> origin/Max-branch
   rake
   rerun
   sinatra
   slim
+<<<<<<< HEAD
   thin
+=======
+>>>>>>> origin/Max-branch
   tilt (= 1.4.1)
