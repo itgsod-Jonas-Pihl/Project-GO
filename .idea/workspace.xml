@@ -2,26 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8e2bc90-6158-4850-979e-dcd4487d94b4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gamersonline.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/faye.ru" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Project-GO.iml" afterPath="$PROJECT_DIR$/.idea/Project-GO.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.ru" afterPath="$PROJECT_DIR$/config.ru" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environment.rb" afterPath="$PROJECT_DIR$/config/environment.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go.rb" afterPath="$PROJECT_DIR$/go.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.slim" afterPath="$PROJECT_DIR$/views/index.slim" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Project-GO.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e8e2bc90-6158-4850-979e-dcd4487d94b4" time="1390480590953" ignored="false" />
+    <file path="/Dummy.txt" changelist="e8e2bc90-6158-4850-979e-dcd4487d94b4" time="1390488380071" ignored="false" />
     <file path="/Gemfile" changelist="e8e2bc90-6158-4850-979e-dcd4487d94b4" time="1390485160900" ignored="false" />
     <file path="/go.rb" changelist="e8e2bc90-6158-4850-979e-dcd4487d94b4" time="1390485347624" ignored="false" />
     <file path="/temp.rb" changelist="e8e2bc90-6158-4850-979e-dcd4487d94b4" time="1390189287293" ignored="false" />
     <file path="/config.ru" changelist="e8e2bc90-6158-4850-979e-dcd4487d94b4" time="1390306592360" ignored="false" />
     <file path="/gamersonline.rb" changelist="e8e2bc90-6158-4850-979e-dcd4487d94b4" time="1390480549162" ignored="false" />
     <file path="/faye.ru" changelist="e8e2bc90-6158-4850-979e-dcd4487d94b4" time="1390380439131" ignored="false" />
-    <file path="/index.slim" changelist="e8e2bc90-6158-4850-979e-dcd4487d94b4" time="1390488007178" ignored="false" />
+    <file path="/index.slim" changelist="e8e2bc90-6158-4850-979e-dcd4487d94b4" time="1390488797944" ignored="false" />
     <file path="/environment.rb" changelist="e8e2bc90-6158-4850-979e-dcd4487d94b4" time="1390482229342" ignored="false" />
     <file path="/chat.slim" changelist="e8e2bc90-6158-4850-979e-dcd4487d94b4" time="1390485374800" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,19 +39,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="go.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="go.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/go.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="12" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
+            <state line="3" column="0" selection-start="133" selection-end="133" vertical-scroll-proportion="0.060080107">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.slim" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.slim" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/index.slim">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="63" selection-start="784" selection-end="784" vertical-scroll-proportion="0.49655172">
+            <state line="6" column="5" selection-start="120" selection-end="120" vertical-scroll-proportion="-3.75">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="19" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -64,7 +69,7 @@
       <file leaf-file-name="room.slim" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/room.slim">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="12" selection-start="888" selection-end="888" vertical-scroll-proportion="-16.25">
+            <state line="26" column="12" selection-start="888" selection-end="888" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -96,11 +101,11 @@
         <option value="$PROJECT_DIR$/gamersonline.rb" />
         <option value="$PROJECT_DIR$/config/environment.rb" />
         <option value="$PROJECT_DIR$/config.ru" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/views/chat.slim" />
-        <option value="$PROJECT_DIR$/go.rb" />
         <option value="$PROJECT_DIR$/views/room.slim" />
         <option value="$PROJECT_DIR$/views/index.slim" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/go.rb" />
       </list>
     </option>
   </component>
@@ -136,6 +141,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -184,7 +190,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -257,12 +262,11 @@
     <frame x="7" y="22" width="1440" height="874" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16427547" sideWeight="0.6705277" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16642755" sideWeight="0.6705277" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -272,6 +276,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -339,9 +344,16 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/faye.ru">
+    <entry file="file://$PROJECT_DIR$/views/index.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="42" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0">
+        <state line="24" column="63" selection-start="784" selection-end="784" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/room.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="12" selection-start="888" selection-end="888" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -398,37 +410,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="11" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/faye.ru">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="1" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="12" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/room.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="12" selection-start="888" selection-end="888" vertical-scroll-proportion="-16.25">
+        <state line="26" column="12" selection-start="888" selection-end="888" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="63" selection-start="784" selection-end="784" vertical-scroll-proportion="0.49655172">
+        <state line="6" column="5" selection-start="120" selection-end="120" vertical-scroll-proportion="-3.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="19" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="133" selection-end="133" vertical-scroll-proportion="0.060080107">
           <folding />
         </state>
       </provider>
