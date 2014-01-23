@@ -1,0 +1,45 @@
+doctype
+html lang="en"
+  head
+    title Faye Sinatra Chat
+    link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" media="screen" rel="stylesheet"
+      css:
+        #messages {
+            | height: 150px;
+            | overflow-y: scroll;
+            | max-height: 150px;
+        | }
+          body
+    .container
+      h1 Faye Sinatra Chat
+      legend
+        | Messages in Room #{room}
+      #messages.well
+      legend= username
+      form#chat-form.form-inline
+        fieldset
+          input#message placeholder="Type something…" type="text"
+          button.btn.btn-inverse type="submit"
+    script src="http://code.jquery.com/jquery-latest.js"
+    script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"
+    script src="/faye.js"
+    script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"
+    javascript:
+      | $(document).ready(function() {
+              | var client = new Faye.Client('/faye');
+              | client.disable('websocket');
+              | var subscription = client.subscribe('/ room ', function(message) {
+                      | $messages = $('#messages');
+                      | $message = $(' ' + message['user'] + ' : ' + message['text'] +'')
+                      | $messages.append($message);
+                      | $messages.animate({ scrollTop: $messages.prop("scrollHeight") }, 500);
+                      | $("#messages div:last-child").effect("highlight", {}, 2000);
+              | });
+
+              | $("#chat-form").submit(function(e){
+                      | e.preventDefault();
+                      | var message = $('#message').val();
+                      | client.publish('/ room ', {user: ' username ', text: message});
+                      | $('#message').val('');
+              | });
+      | });

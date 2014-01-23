@@ -2,6 +2,9 @@ GEM
   remote: https://rubygems.org/
   specs:
     addressable (2.3.5)
+    async_sinatra (1.1.0)
+      rack (>= 1.4.1)
+      sinatra (>= 1.3.2)
     bcrypt-ruby (3.1.2)
     cookiejar (0.3.0)
     daemons (1.1.9)
@@ -103,13 +106,10 @@ GEM
       tilt (>= 1.3.3, < 2.1)
     stringex (1.5.1)
     temple (0.6.7)
-<<<<<<< HEAD
     thin (1.6.1)
       daemons (>= 1.0.9)
       eventmachine (>= 1.0.0)
       rack (>= 1.0.0)
-=======
->>>>>>> origin/Max-branch
     tilt (1.4.1)
     uuidtools (2.1.4)
     websocket-driver (0.3.2)
@@ -118,19 +118,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  async_sinatra
   data_mapper
   dm-sqlite-adapter
-<<<<<<< HEAD
   faye
-=======
   rack
->>>>>>> origin/Max-branch
   rake
   rerun
   sinatra
   slim
-<<<<<<< HEAD
   thin
-=======
->>>>>>> origin/Max-branch
   tilt (= 1.4.1)

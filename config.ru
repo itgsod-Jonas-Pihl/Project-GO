@@ -1,3 +1,3 @@
 require './config/environment'
 
-run Gamersonline
+run GamersOnline

@@ -8,5 +8,5 @@ configure :development do
   require_relative './development.rb'
 end
 
-require './gamersonline'
+require './go'
 DataMapper.finalize
