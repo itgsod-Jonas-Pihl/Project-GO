@@ -1,0 +1,25 @@
+#chatbox {
+    float: left;
+    margin-left: 50%;
+
+}
+
+#messages {
+    float: left;
+    height: 450px;
+    width: 360px;
+    border: 1px solid darkgray;
+    overflow:scroll;
+}
+#content_message {
+    font: left;
+    margin-top: 5px;
+    width: 313px;
+}
+#send_button {
+    margin-top: -2px;
+    height: 27px;
+}
+#nickname {
+    width: 200px;
+}

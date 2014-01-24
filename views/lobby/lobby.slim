@@ -1,35 +1,43 @@
-h3 Simple Chat using Sinatra, Ruby and Faye
-p
-  label Nickname:
-  input type='text' id='nickname'
-  label Send Message:
-  input type='text' id='content_message'
-  input type='button' onclick ='say_hi()' value='send'
+script src="/faye.js"
 
-hr
-#messages
-javascript:
-  var client = new Faye.Client('http://#{request.host}:#{request.port}/faye')
+div#chatbox
+  p
+    label Nickname:
+    input type='text' id='nickname'
+    #messages
+    input type='text' id='content_message'
+    input type='button' onclick ='say_hi()' value='send' id="send_button"
 
-  client.subscribe('/messages', function(message) {
-    document.getElementById('messages').innerHTML += "<p>" + message.nickname + " : " + message.text + "</p>";
-    content_message.value= ""
-  });
+  hr
+  javascript:
+    var client = new Faye.Client('http://#{request.host}:#{request.port}/faye')
 
-  document.getElementById("content_message").addEventListener( "keydown", function( e ) {
-      var keyCode = e.keyCode || e.which;
-      if ( keyCode === 13 ) {
-         // enter pressed
-         say_hi();
-      }
-  }, false);
-
-  function say_hi() {
-    var text = document.getElementById('content_message').value;
-    if(document.getElementById("content_message").value != ""){
-      var nick = document.getElementById('nickname').value;
-      client.publish('/messages', {
-        text: text, nickname: nick
+    client.subscribe('/messages', function(message) {
+      document.getElementById('messages').innerHTML += "<p>" + message.nickname + " : " + message.text + "</p>";
+      document.getElementById('messages').scrollTop = 10000;
     });
+
+    document.getElementById("content_message").addEventListener( "keydown", function( e ) {
+        var keyCode = e.keyCode || e.which;
+        if ( keyCode === 13 ) {
+           // enter pressed
+           say_hi();
+        }
+    }, false);
+
+    function say_hi() {
+      var text = document.getElementById('content_message').value;
+      if( text!= ""){
+        var nick = document.getElementById('nickname').value;
+        if(nick == "" || nick.length > 12){
+          nickname.value="Nick has to be between 1-12"
+        }
+        else {
+          content_message.value= ""
+          client.publish('/messages', {
+            text: text, nickname: nick
+
+      });
+      }
+      }
     }
-  }
