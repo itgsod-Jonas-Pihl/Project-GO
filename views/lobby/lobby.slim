@@ -13,12 +13,23 @@ javascript:
 
   client.subscribe('/messages', function(message) {
     document.getElementById('messages').innerHTML += "<p>" + message.nickname + " : " + message.text + "</p>";
+    content_message.value= ""
   });
+
+  document.getElementById("content_message").addEventListener( "keydown", function( e ) {
+      var keyCode = e.keyCode || e.which;
+      if ( keyCode === 13 ) {
+         // enter pressed
+         say_hi();
+      }
+  }, false);
 
   function say_hi() {
     var text = document.getElementById('content_message').value;
-    var nick = document.getElementById('nickname').value;
-    client.publish('/messages', {
-      text: text, nickname: nick
+    if(document.getElementById("content_message").value != ""){
+      var nick = document.getElementById('nickname').value;
+      client.publish('/messages', {
+        text: text, nickname: nick
     });
+    }
   }
