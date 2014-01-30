@@ -132,6 +132,7 @@ DEPENDENCIES
   data_mapper
   dm-sqlite-adapter
   faye
+  json
   omniauth-openid
   omniauth-steam
   rack

@@ -1,11 +1,12 @@
+
+
 script src="/faye.js"
 
 div#chatbox
   p
-    label Nickname:
-    input type='text' id='nickname'
-    input type='button' value='set nickname' id='nick_button'
 
+
+    input type='hidden' id='nickname' value="#{@username}"
     #messages
     input type='text' id='content_message'
     input type='button' onclick ='say_hi()' value='send' id="send_button"
