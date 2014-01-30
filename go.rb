@@ -1,5 +1,7 @@
 require "openid/store/filesystem"
 require "omniauth/strategies/steam"
+require 'net/http'
+
 
 class GamersOnline < Sinatra::Base
 
@@ -27,12 +29,31 @@ class GamersOnline < Sinatra::Base
   end
 
   get '/lobby' do
-    slim :'./lobby/lobby'
+
+    unless session[:steamid] == nil
+      uri = URI("http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=#{api_key}&steamids=#{session[:steamid]}")
+      @user = JSON.parse(Net::HTTP.get(uri))
+      @username = @user['response']
+      @username = @username['players'][0]['personaname']
+      "#{@user.class} #{@username.inspect} #{@username.class}"
+
+      slim :'./lobby/lobby'
+    else
+      redirect '/'
+    end
   end
 
   post '/auth/steam/callback' do
     content_type "text/plain"
-    request.env["omniauth.auth"].info.to_hash.inspect
-  end
+    @openid = request.env["omniauth.auth"].extra.raw_info.to_hash
+    session[:steamid] = @openid['steamid']
 
+  end
+  get '/test' do
+    if session[:steamid].to_i == 76561198021297355
+      "wohooo"
+    else
+      "buuuuh"
+    end
+  end
 end
