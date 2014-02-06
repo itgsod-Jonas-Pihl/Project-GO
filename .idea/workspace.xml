@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" name="Default" comment="Added steam openid login">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" name="Default" comment="Added steam openid login" />
     <ignored path="Project-GO.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1391686000905" ignored="false" />
