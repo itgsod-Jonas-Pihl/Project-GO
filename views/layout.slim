@@ -11,7 +11,8 @@ html
         a href='/auth/steam'
           img src='https://steamcommunity.com/public/images/signinthroughsteam/sits_small.png'
     div#menucontainer
-      button Profile
+      a href= "profile/#{session[:steamid]}"
+        button Profile
       button Browse
       button Community
     == yield
