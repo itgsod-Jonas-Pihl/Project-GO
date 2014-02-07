@@ -2,14 +2,17 @@ doctype html
 html
   head
     meta charset='utf-8'
-    link href="css/bootstrap.min.css" rel="stylesheet"
     link href="css/go.css" rel='stylesheet'
+    link rel="stylesheet/less" type="text/css" href="less/styles.less"
+    script src="js/less.js" type="text/javascript"
     title Gamers Online
   body
-    div#header
-      div#login
-        a href='/auth/steam'
-          img src='https://steamcommunity.com/public/images/signinthroughsteam/sits_small.png'
+    div.container
+      div.wrapper
+        div.content-main
+        div.content-secondary
+          a href='/auth/steam'
+            img src='https://steamcommunity.com/public/images/signinthroughsteam/sits_small.png'
     div#menucontainer
       a href= "profile/#{session[:steamid]}"
         button Profile
