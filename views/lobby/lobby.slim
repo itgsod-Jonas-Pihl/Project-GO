@@ -5,8 +5,8 @@ script src="/faye.js"
 div#chatbox
   p
 
-
-    input type='hidden' id='nickname' value="#{@username}"
+    input type='hidden' id='channel' value=""
+    input type='hidden' id='nickname' value="#{@user}"
     #messages
     input type='text' id='content_message'
     input type='button' onclick ='say_hi()' value='send' id="send_button"
@@ -22,25 +22,16 @@ div#chatbox
     document.getElementById("content_message").addEventListener( "keydown", function( e ) {
         var keyCode = e.keyCode || e.which;
         if ( keyCode === 13 ) {
-           // enter pressed
            say_hi();
         }
     }, false);
 
     function say_hi() {
       var text = document.getElementById('content_message').value;
-      if( text!= ""){
-        var nick = document.getElementById('nickname').value;
-        if(nick == "" || nick.length > 12){
-          nickname.value="Nick has to be between 1-12"
-        }
-        else {
-          content_message.value= ""
-          document.getElementById('content_message').focus()
-          client.publish('/messages', {
-            text: text, nickname: nick
-
-      });
-      }
-      }
+      var nick = document.getElementById('nickname').value;
+      content_message.value= ""
+      document.getElementById('content_message').focus()
+      client.publish('/messages', {text: text, nickname: nick});
+      document.getElementById("text").focus();
     }
+
