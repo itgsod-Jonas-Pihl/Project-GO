@@ -45,7 +45,7 @@ class GamersOnline < Sinatra::Base
 
   get '/profile' do
     unless session[:steamid] == nil
-      uri = URI("http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=#{api_key}&steamid=#{session[:steamid]}&include_appinfo=1")
+      uri = URI("http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=#{api_key}&steamid=#{session[:steamid]}&include_appinfo=1&include_played_free_games=1")
       @games = JSON.parse(Net::HTTP.get(uri))['response']['games']
 
       slim :'/profile/profile'
@@ -54,4 +54,12 @@ class GamersOnline < Sinatra::Base
     end
   end
 
+  get '/browse/:id' do
+    unless session[:steamid] == nil
+      uri = URI("http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=#{api_key}&steamid=#{session[:steamid]}&include_appinfo=1&include_played_free_games=1")
+      #@game = JSON.parse(Net::HTTP.get(uri))['response']['games']
+    else
+      redirect '/'
+    end
+  end
 end
