@@ -1,20 +1,24 @@
-@import "../../bower_components";
+@import "../../bower_components/bootstrap/less/bootstrap.less";
+@import "../../bower_components/bootstrap/less/normalize.less";
+
 @dark-gray: #444;
+@red: #ff0000;
+@height: 40px;
+@grid-columns:              12;
+@grid-gutter-width:         30px;
+@grid-float-breakpoint:     768px;
 
 .wrapper {
-  .make-row();
+  .make-row(@height);
 }
 
 .content-main {
-  .make-lg-column(8);
+  .make-lg-column-push(8);
+  background-color: @dark-gray;
 }
 
 .content-secondary {
-  .make-lg-column(3);
+  .make-lg-column-pull(3);
   .make-lg-column-offset(1);
-}
-
-#menucontainer {
-  height: 35px;
-  background-color: #666;
+  background-color: @red;
 }

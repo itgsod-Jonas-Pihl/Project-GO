@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environment.rb" afterPath="$PROJECT_DIR$/config/environment.rb" />
+    <list default="true" id="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" name="Default" comment="Added steam openid login">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/bootstrap.css" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/lobby/message.rb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Project-GO.iml" afterPath="$PROJECT_DIR$/.idea/Project-GO.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/frontpage.slim" afterPath="$PROJECT_DIR$/views/frontpage.slim" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go.rb" afterPath="$PROJECT_DIR$/go.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/production.rb" afterPath="$PROJECT_DIR$/config/production.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.slim" afterPath="$PROJECT_DIR$/views/layout.slim" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/lobby/lobby.slim" afterPath="$PROJECT_DIR$/views/lobby/lobby.slim" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/profile/profile.slim" afterPath="$PROJECT_DIR$/views/profile/profile.slim" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Project-GO.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1392040687504" ignored="false" />
+    <file path="/Dummy.txt" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1391770986609" ignored="false" />
     <file path="/temp.rb" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1389969480128" ignored="false" />
-    <file path="/go.rb" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1392194862414" ignored="false" />
+    <file path="/go.rb" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1391958479363" ignored="false" />
     <file path="/config.ru" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1391694449718" ignored="false" />
     <file path="/index.slim" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1390306378041" ignored="false" />
     <file path="/layout.slim" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1391788935052" ignored="false" />
@@ -24,11 +30,10 @@
     <file path="/go.css" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1391789016524" ignored="false" />
     <file path="/frontpage.slim" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1391767647651" ignored="false" />
     <file path="/layout.css" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1391091457710" ignored="false" />
-    <file path="/environment.rb" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1392291759139" ignored="false" />
+    <file path="/environment.rb" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1391689679501" ignored="false" />
     <file path="/config.rb" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1391694068395" ignored="false" />
     <file path="/styles.less" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1391788737591" ignored="false" />
-    <file path="/profile.slim" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1392042941188" ignored="false" />
-    <file path="/production.rb" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1392291709809" ignored="false" />
+    <file path="/profile.slim" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1392035117692" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,10 +53,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="go.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/go.rb">
+      <file leaf-file-name="layout.slim" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/layout.slim">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="18" selection-start="1454" selection-end="1454" vertical-scroll-proportion="0.0">
+            <state line="17" column="22" selection-start="558" selection-end="558" vertical-scroll-proportion="-10.625">
               <folding />
             </state>
           </provider>
@@ -60,25 +65,16 @@
       <file leaf-file-name="profile.slim" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/profile/profile.slim">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="8" selection-start="70" selection-end="70" vertical-scroll-proportion="-1.25">
+            <state line="1" column="4" selection-start="24" selection-end="24" vertical-scroll-proportion="-0.625">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/production.rb">
+      <file leaf-file-name="lobby.slim" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/lobby/lobby.slim">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="18" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="environment.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/environment.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="3" selection-start="221" selection-end="221" vertical-scroll-proportion="0.24032043">
+            <state line="7" column="44" selection-start="86" selection-end="86" vertical-scroll-proportion="0.14482759">
               <folding />
             </state>
           </provider>
@@ -107,9 +103,11 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/models/users.rb" />
         <option value="$PROJECT_DIR$/models/user.rb" />
         <option value="$PROJECT_DIR$/public/css/layout.css" />
         <option value="$PROJECT_DIR$/config.rb" />
+        <option value="$PROJECT_DIR$/config/environment.rb" />
         <option value="$PROJECT_DIR$/config/compass.rb" />
         <option value="$PROJECT_DIR$/config.ru" />
         <option value="$PROJECT_DIR$/views/less/styles.less" />
@@ -117,12 +115,10 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/public/less/styles.less" />
         <option value="$PROJECT_DIR$/public/css/go.css" />
+        <option value="$PROJECT_DIR$/go.rb" />
         <option value="$PROJECT_DIR$/views/layout.slim" />
         <option value="$PROJECT_DIR$/views/lobby/lobby.slim" />
         <option value="$PROJECT_DIR$/views/profile/profile.slim" />
-        <option value="$PROJECT_DIR$/go.rb" />
-        <option value="$PROJECT_DIR$/config/production.rb" />
-        <option value="$PROJECT_DIR$/config/environment.rb" />
       </list>
     </option>
   </component>
@@ -185,7 +181,75 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project-GO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project-GO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="profile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project-GO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project-GO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lobby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project-GO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project-GO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project-GO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project-GO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -356,44 +420,18 @@
       <created>1390570363458</created>
       <updated>1390570363458</updated>
     </task>
-    <task id="LOCAL-00005" summary="Added Profile page with all your games">
-      <created>1392040689311</created>
-      <updated>1392040689311</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
+    <option name="localTasksCounter" value="5" />
     <servers />
-  </component>
-  <component name="TodoView" selected-index="0">
-    <todo-panel id="selected-file">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
-    </todo-panel>
-    <todo-panel id="default-changelist">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
-    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32689834" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3364419" sideWeight="0.6705277" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3364419" sideWeight="0.67310166" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -402,6 +440,8 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32689834" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -449,7 +489,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Profile page with all your games" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added username character limitations, fixed bug with the input. Added input clear when sending message, styled the chat abit, added Bootstrap" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -467,12 +507,16 @@
     <MESSAGE value="Got sinatra up and running." />
     <MESSAGE value="Fixed with the chat. Added so that you have to write something in message and also added that you can press enter instead of clicking the send button" />
     <MESSAGE value="Added username character limitations, fixed bug with the input. Added input clear when sending message, styled the chat abit, added Bootstrap" />
-    <MESSAGE value="Added Profile page with all your games" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/bower_components/bootstrap/less/variables.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bower_components/bootstrap/less/scaffolding.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="9" selection-start="335" selection-end="335" vertical-scroll-proportion="0.33620688" />
@@ -485,6 +529,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/environment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="18" selection-end="18" vertical-scroll-proportion="0.020026702" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/development.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="58" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -495,6 +549,13 @@
     <entry file="file://$PROJECT_DIR$/rakefile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="26" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="10" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -520,65 +581,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/lobby/lobby.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="44" selection-start="86" selection-end="86" vertical-scroll-proportion="-4.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="22" selection-start="558" selection-end="558" vertical-scroll-proportion="0.35172415">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="18" selection-start="1454" selection-end="1454" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+    <entry file="file://$PROJECT_DIR$/go.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/development.rb">
+    <entry file="file://$PROJECT_DIR$/go.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="58" selection-start="248" selection-end="248" vertical-scroll-proportion="0.120160215">
+        <state line="50" column="30" selection-start="1398" selection-end="1398" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/views/layout.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="10" selection-start="260" selection-end="260" vertical-scroll-proportion="0.28037384">
+        <state line="17" column="22" selection-start="558" selection-end="558" vertical-scroll-proportion="-10.625">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/profile/profile.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="8" selection-start="70" selection-end="70" vertical-scroll-proportion="-1.25">
+        <state line="1" column="4" selection-start="24" selection-end="24" vertical-scroll-proportion="-0.625">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/production.rb">
+    <entry file="file://$PROJECT_DIR$/views/lobby/lobby.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="18" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="3" selection-start="221" selection-end="221" vertical-scroll-proportion="0.24032043">
+        <state line="7" column="44" selection-start="86" selection-end="86" vertical-scroll-proportion="0.14482759">
           <folding />
         </state>
       </provider>
