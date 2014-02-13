@@ -38,6 +38,7 @@
     <file path="$PROJECT_DIR$/../herokudeploy/config/production.rb" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1391782306846" ignored="false" />
     <file path="$PROJECT_DIR$/../herokudeploy/config.ru" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1391782413937" ignored="false" />
     <file path="/.gitignore" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1392292977618" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1392293988211" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,10 +58,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="layout.slim" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="layout.slim" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/layout.slim">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="23" selection-start="426" selection-end="426" vertical-scroll-proportion="0.32374102">
+            <state line="9" column="55" selection-start="313" selection-end="313" vertical-scroll-proportion="-5.625">
               <folding />
             </state>
           </provider>
@@ -75,7 +76,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0">
@@ -455,14 +456,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="22" width="1260" height="705" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3434926" sideWeight="0.67105263" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3434926" sideWeight="0.67105263" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -612,6 +613,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="55" selection-start="313" selection-end="313" vertical-scroll-proportion="-5.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="10" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0">
@@ -622,13 +630,6 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="23" selection-start="426" selection-end="426" vertical-scroll-proportion="0.32374102">
           <folding />
         </state>
       </provider>
