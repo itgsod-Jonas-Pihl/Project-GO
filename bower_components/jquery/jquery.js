@@ -1108,7 +1108,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 		};
 	}
 
-	// Tag
+	// GameGenre
 	Expr.find["TAG"] = support.getElementsByTagName ?
 		function( tag, context ) {
 			if ( typeof context.getElementsByTagName !== strundefined ) {
