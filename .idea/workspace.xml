@@ -1,22 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/apps.slim" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/game.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/genre.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/lobby.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/go-dev.sqlite" afterPath="$PROJECT_DIR$/db/go-dev.sqlite" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/go.rb" afterPath="$PROJECT_DIR$/go.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/jquery.js" afterPath="$PROJECT_DIR$/bower_components/jquery/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.slim" afterPath="$PROJECT_DIR$/views/layout.slim" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/profile/profile.slim" afterPath="$PROJECT_DIR$/views/profile/profile.slim" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/user.rb" afterPath="$PROJECT_DIR$/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" name="Default" comment="" />
     <ignored path="Project-GO.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1392293242489" ignored="false" />
+    <file path="/Dummy.txt" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1392384054707" ignored="false" />
     <file path="/temp.rb" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1391005403822" ignored="false" />
     <file path="/go.rb" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1392378612475" ignored="false" />
     <file path="/config.ru" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1389969591218" ignored="false" />
@@ -59,7 +47,7 @@
       <file leaf-file-name="layout.slim" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/layout.slim">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="22" selection-start="772" selection-end="772" vertical-scroll-proportion="-13.75">
+            <state line="22" column="22" selection-start="772" selection-end="772" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -101,19 +89,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tagging.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/models/tagging.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lobby.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="lobby.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/models/lobby.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="18" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
+            <state line="8" column="18" selection-start="167" selection-end="167" vertical-scroll-proportion="0.20618556">
               <folding />
             </state>
           </provider>
@@ -163,8 +142,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1440" />
-    <option name="height" value="874" />
+    <option name="width" value="1280" />
+    <option name="height" value="705" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -192,6 +171,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -268,7 +248,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -277,8 +256,8 @@
     <property name="options.lastSelected" value="vcs.Git" />
     <property name="last_opened_file_path" value="$USER_HOME$/RubymineProjects/Login system" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -436,15 +415,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="874" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="22" width="1280" height="705" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32818532" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31779054" sideWeight="0.6718147" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36466774" sideWeight="0.6718147" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -453,6 +431,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32818532" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -525,6 +504,13 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/models/lobby.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="18" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/environment.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -549,49 +535,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/lobby/lobby.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="9" selection-start="815" selection-end="815" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="26" column="9" selection-start="815" selection-end="815" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/frontpage.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="9" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
+        <state line="0" column="9" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/profile/profile.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="53" selection-start="73" selection-end="73" vertical-scroll-proportion="-0.625">
-          <folding />
-        </state>
+        <state line="1" column="53" selection-start="73" selection-end="73" vertical-scroll-proportion="-0.625" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/apps.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="24" selection-start="110" selection-end="110" vertical-scroll-proportion="0.08010681">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/lobby.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="18" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="4" column="24" selection-start="110" selection-end="110" vertical-scroll-proportion="0.08010681" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/layout.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="22" selection-start="772" selection-end="772" vertical-scroll-proportion="-13.75">
+        <state line="22" column="22" selection-start="772" selection-end="772" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -624,9 +593,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/tagging.rb">
+    <entry file="file://$PROJECT_DIR$/models/lobby.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
+        <state line="8" column="18" selection-start="167" selection-end="167" vertical-scroll-proportion="0.20618556">
           <folding />
         </state>
       </provider>
