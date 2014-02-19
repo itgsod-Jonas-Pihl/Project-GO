@@ -1,0 +1,6 @@
+h1 ="Welcome! this is your first time logging in so please write your username that you want to use on the site"
+
+form name="input" action="/register" method="post"
+  input type='hidden' name='steamid' value=session['steamid']
+  input type='text' name='username'
+  input type="submit" value="Submit"

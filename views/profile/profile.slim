@@ -1,3 +1,6 @@
--for game in @games
-      a href="../browse/#{game['appid']}/#{game['name']}"
-        img src="http://media.steampowered.com/steamcommunity/public/images/apps/#{game['appid']}/#{game['img_logo_url']}.jpg"
+
+-for game in @game_list
+      a href="../browse/#{game['appid']}"
+        img src="http://media.steampowered.com/steamcommunity/public/images/apps/#{game['appid']}/#{game['logo']}.jpg"
+
+

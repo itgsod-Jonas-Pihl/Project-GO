@@ -3,21 +3,27 @@
 script src="/faye.js"
 
 div#chatbox
-  p
 
-    input type='hidden' id='channel' value=""
-    input type='hidden' id='nickname' value="#{@user}"
-    #messages
-    input type='text' id='content_message'
-    input type='button' onclick ='say_hi()' value='send' id="send_button"
+  input type='hidden' id='channel' value=@lobby['id']
+  input type='hidden' id='nickname' value="#{@user['name']}"
+  #messages
+  input type='text' id='content_message'
+  input type='button' onclick ='say_hi()' value='send' id="send_button"
 
   javascript:
     var client = new Faye.Client('http://#{request.host}:#{request.port}/faye')
 
-    client.subscribe('/messages', function(message) {
+    var channel = "/"+document.getElementById('channel').value;
+
+    client.subscribe(channel, function(message) {
       document.getElementById('messages').innerHTML += "<p>" + message.nickname + " : " + message.text + "</p>";
       document.getElementById('messages').scrollTop = 10000;
     });
+
+    client.on('subscribe', function(clientId, channel) {
+
+    });
+
 
     document.getElementById("content_message").addEventListener( "keydown", function( e ) {
         var keyCode = e.keyCode || e.which;
@@ -31,7 +37,7 @@ div#chatbox
       var nick = document.getElementById('nickname').value;
       content_message.value= ""
       document.getElementById('content_message').focus()
-      client.publish('/messages', {text: text, nickname: nick});
+      client.publish(channel, {text: text, nickname: nick});
       document.getElementById("text").focus();
     }
 

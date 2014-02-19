@@ -1,0 +1,1 @@
+User.create(steamid: 123, name:'hejhej', banned: 0, admin: 1)

@@ -1,0 +1,19 @@
+h1 = @game['title']
+img src="http://media.steampowered.com/steamcommunity/public/images/apps/#{@game['appid']}/#{@game['logo']}.jpg"
+
+button type='button' onclick='showDiv()' Create lobby
+
+
+form action="/createlobby" method="post"
+  input type='hidden' name='appid' value="#{@game['appid']}"
+  input type='text' name='name' placeholder='Lobby name'
+  select name='slots'
+    -30.times do |i|
+      option value=i #{i}
+  button type="submit" Create lobby!
+
+-unless @lobby_list == nil
+  -for lobby in @lobby_list
+      a href="../lobby/#{lobby['id']}"
+       p = lobby['name']
+      p = "#{lobby['players']}/#{lobby['slots']}"
