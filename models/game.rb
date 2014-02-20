@@ -3,7 +3,7 @@ class Game
 
   property :appid, Integer, :key => true
   property :title, String
-  property :logo, String
+  property :logo, String, :required => true
 
 
   has n, :taggings
