@@ -52,7 +52,7 @@ class GamersOnline < Sinatra::Base
   end
 
   post '/register' do
-    User.create(steamid: params[:steamid].to_i, name: params[:username])
+    User.create(steamid: params[:steamid], name: params[:username])
     redirect '/'
   end
 
