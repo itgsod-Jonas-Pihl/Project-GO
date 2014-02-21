@@ -10,13 +10,14 @@ html
     title Gamers Online
     link href="css/go.css" rel='stylesheet'
   body
-    div.container
-      div.wrapper
-        div.content-main
-        div.content-secondary
+    .container-fluid#headcontainer
+      .row-fluid#header
+        .col-xs-4#logo
+        .col-xs-4#search
+        .col-xs-2.col-xs-offset-2#steambutton
           a href='/auth/steam'
             img src='https://steamcommunity.com/public/images/signinthroughsteam/sits_small.png'
-    div#menucontainer
+    #menucontainer
       a href= "../profile"
         button Profile
       button Browse
