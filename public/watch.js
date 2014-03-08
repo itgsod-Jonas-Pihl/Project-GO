@@ -9,8 +9,8 @@
    Always give credit where it's due. Parts of this script is modified
    from Mikeal Rogers's watch script (https://github.com/mikeal/watch)
 
-   Usage:     node less-watch-compiler.js FOLDER_TO_WATCH FOLDER_TO_OUTPUT
-   Example:   'node less-watch-compiler.js less css' will watch ./less folder
+   Usage:     node watch.js FOLDER_TO_WATCH FOLDER_TO_OUTPUT
+   Example:   'node watch.js less css' will watch ./less folder
               and compile the less css files into ./css when they are added/changed
 */
 var allowedExtensions = ['less'];
@@ -24,7 +24,7 @@ var sys = require('util')
 var argvs = process.argv.slice(2);
 if (!argvs[0] || !argvs[1]){
   console.log('Missing arguments. Example:');
-    console.log('\tnode less-watch-compiler.js FOLDER_TO_WATCH FOLDER_TO_OUTPUT');
+    console.log('\tnode watch.js FOLDER_TO_WATCH FOLDER_TO_OUTPUT');
   process.exit(1);
 }
 

@@ -3,7 +3,7 @@ html
   head
     meta charset='utf-8'
     link rel="stylesheet/css" type="text/css" href="css/go.css"
-    /link rel="stylesheet/less" type="text/css" href="less/styles.less"
+    /link rel="stylesheet/less" type="text/css" href="less/go.less"
     script src="js/less.js" type="text/javascript"
     meta http-equiv="X-UA-Compatible" content="IE=edge"
     meta name="viewport" content="width=device-width, initial-scale=1"
@@ -17,11 +17,17 @@ html
         .col-xs-2.col-xs-offset-2#steambutton
           a href='/auth/steam'
             img src='https://steamcommunity.com/public/images/signinthroughsteam/sits_small.png'
-    #menucontainer
-      a href= "../profile"
-        button Profile
-      button Browse
-      button Community
+    .container-fluid#menucontainer
+      .row-fluid#menu
+        .col-xs-4.col-xs-offset-4
+          .btn-group.btn-group-justified
+            .btn-group
+              button.btn Profile
+            .btn-group
+              button.btn Browse
+            .btn-group
+              button.btn Community
+
 
     script src="js/less.js" type="text/javascript"
     == yield

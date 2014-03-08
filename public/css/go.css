@@ -5822,25 +5822,29 @@ th {
   padding: 0;
   width: 100%;
   display: table;
-  height: 60px;
+  height: 70px;
   background-color: #333333;
 }
-#header {
+#menucontainer {
+  background-color: #999999;
+  height: 34px;
+  width: 100%;
+  display: table;
+  padding: 0;
+}
+#header,
+#menu {
   height: 100%;
   display: table-cell;
   vertical-align: middle;
 }
-#red,
-#green,
-#blue {
-  height: 60px;
+.btn {
+  height: 34px;
+  padding: 0;
+  border-radius: 0;
+  background-color: #999999;
 }
-#red {
-  background-color: #ff0000;
-}
-#green {
-  background-color: #00ff00;
-}
-#blue {
-  background-color: #0000ff;
+.btn:hover {
+  background-color: #333333;
+  color: #fff;
 }

@@ -1,30 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" name="Default" comment="apps without logos will no longer be added to database">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less-watch-compiler.js" />
+    <list default="true" id="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/less-watch-compiler.js" afterPath="$PROJECT_DIR$/public/watch.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/less/styles.less" afterPath="$PROJECT_DIR$/public/less/go.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/frontpage.slim" afterPath="$PROJECT_DIR$/views/frontpage.slim" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/go-dev.sqlite" afterPath="$PROJECT_DIR$/db/go-dev.sqlite" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/go.css" afterPath="$PROJECT_DIR$/public/css/go.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.slim" afterPath="$PROJECT_DIR$/views/layout.slim" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/less/styles.less" afterPath="$PROJECT_DIR$/public/less/styles.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Project-GO.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1392910138893" ignored="false" />
+    <file path="/Dummy.txt" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1394192995451" ignored="false" />
     <file path="/temp.rb" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1392842296768" ignored="false" />
     <file path="/go.rb" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1392901575631" ignored="false" />
     <file path="/config.ru" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1389969591218" ignored="false" />
     <file path="/index.slim" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1390306378041" ignored="false" />
-    <file path="/layout.slim" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1392976301673" ignored="false" />
+    <file path="/layout.slim" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1394197492483" ignored="false" />
     <file path="/Gemfile" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1390826036125" ignored="false" />
     <file path="$USER_HOME$/Munchkin Counter/munchkin.rb" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1390306446865" ignored="false" />
     <file path="/lobby.slim" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1392839723682" ignored="false" />
     <file path="/CascadingStyleSheet.css" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1390562619897" ignored="false" />
     <file path="/bootstrap.min.css" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1390564640565" ignored="false" />
     <file path="/go.css" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1390569652740" ignored="false" />
-    <file path="/frontpage.slim" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1392973908704" ignored="false" />
+    <file path="/frontpage.slim" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1394195183008" ignored="false" />
     <file path="/test.slim" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1390825880713" ignored="false" />
     <file path="/user.rb" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1392901642544" ignored="false" />
     <file path="/profile.slim" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1392841372324" ignored="false" />
@@ -38,6 +37,7 @@
     <file path="/lobbybrowser.slim" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1392840716129" ignored="false" />
     <file path="/.gitignore" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1392895561833" ignored="false" />
     <file path="/styles.less" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1392976615137" ignored="false" />
+    <file path="/go.less" changelist="fa1157e4-1cf5-47c0-9fd4-4d5c7c7a92c0" time="1394290560536" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,10 +57,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="styles.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/less/styles.less">
+      <file leaf-file-name="go.less" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/less/go.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="10" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0">
+            <state line="35" column="14" selection-start="598" selection-end="598" vertical-scroll-proportion="0.9020619">
               <folding />
             </state>
           </provider>
@@ -69,16 +69,19 @@
       <file leaf-file-name="go.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/go.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="576" column="1" selection-start="8673" selection-end="8673" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1394290565000" expanded="true" signature="122370:122448" placeholder="{...}" />
+                <marker date="1394290565000" expanded="true" signature="122577:122620" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="less-watch-compiler.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/less-watch-compiler.js">
+      <file leaf-file-name="watch.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/watch.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.0582011">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -87,7 +90,7 @@
       <file leaf-file-name="layout.slim" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/layout.slim">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="17" selection-start="491" selection-end="491" vertical-scroll-proportion="-8.125">
+            <state line="28" column="25" selection-start="1007" selection-end="1007" vertical-scroll-proportion="-17.5">
               <folding />
             </state>
           </provider>
@@ -96,7 +99,7 @@
       <file leaf-file-name="frontpage.slim" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/frontpage.slim">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="18" selection-start="74" selection-end="74" vertical-scroll-proportion="-2.5">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -125,7 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/db/seedfile.rb" />
         <option value="$PROJECT_DIR$/views/register/register.slim" />
         <option value="$PROJECT_DIR$/views/lobby/lobby.slim" />
         <option value="$PROJECT_DIR$/views/browse/lobby/lobbybrowser.slim" />
@@ -135,12 +137,13 @@
         <option value="$PROJECT_DIR$/models/game.rb" />
         <option value="$PROJECT_DIR$/go.rb" />
         <option value="$PROJECT_DIR$/views/profile/profile.slim" />
-        <option value="$PROJECT_DIR$/public/css/go.css" />
-        <option value="$PROJECT_DIR$/views/frontpage.slim" />
-        <option value="$PROJECT_DIR$/views/layout.slim" />
         <option value="$PROJECT_DIR$/public/less/less_compiler.js" />
         <option value="$PROJECT_DIR$/public/compiler.js" />
         <option value="$PROJECT_DIR$/public/less/styles.less" />
+        <option value="$PROJECT_DIR$/public/css/go.css" />
+        <option value="$PROJECT_DIR$/views/frontpage.slim" />
+        <option value="$PROJECT_DIR$/views/layout.slim" />
+        <option value="$PROJECT_DIR$/public/less/go.less" />
       </list>
     </option>
   </component>
@@ -175,7 +178,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -274,6 +276,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -282,8 +285,8 @@
     <property name="options.lastSelected" value="vcs.Git" />
     <property name="last_opened_file_path" value="$USER_HOME$/RubymineProjects/Login system" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -450,20 +453,23 @@
       <created>1392902044429</created>
       <updated>1392902044429</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="getting started with less, implementing automatic compiler">
+      <created>1393021734355</created>
+      <updated>1393021734355</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="705" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32730263" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3262295" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40113452" sideWeight="0.67269737" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19854133" sideWeight="0.6737705" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -472,6 +478,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -519,7 +526,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="apps without logos will no longer be added to database" />
+    <option name="LAST_COMMIT_MESSAGE" value="getting started with less, implementing automatic compiler" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -541,6 +548,7 @@
     <MESSAGE value="Adding tagging" />
     <MESSAGE value="Changed datatype for userid" />
     <MESSAGE value="apps without logos will no longer be added to database" />
+    <MESSAGE value="getting started with less, implementing automatic compiler" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -558,51 +566,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="8" selection-start="8" selection-end="8" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="8" selection-start="8" selection-end="8" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/owned_games.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="31" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="3" column="31" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/Tagging.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="3" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="5" column="3" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/game.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="43" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="5" column="43" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="41" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="3" column="41" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/go.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="12" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="5" column="12" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/profile/profile.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="118" selection-start="184" selection-end="184" vertical-scroll-proportion="0.055248618">
-          <folding />
-        </state>
+        <state line="2" column="118" selection-start="184" selection-end="184" vertical-scroll-proportion="0.055248618" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/lobby/lobby.slim">
@@ -619,37 +613,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/frontpage.slim">
+    <entry file="file://$PROJECT_DIR$/public/watch.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="18" selection-start="74" selection-end="74" vertical-scroll-proportion="-2.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="17" selection-start="491" selection-end="491" vertical-scroll-proportion="-8.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/less/styles.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="10" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/go.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
+        <state line="576" column="1" selection-start="8673" selection-end="8673" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1394290565000" expanded="true" signature="122370:122448" placeholder="{...}" />
+            <marker date="1394290565000" expanded="true" signature="122577:122620" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/frontpage.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/less-watch-compiler.js">
+    <entry file="file://$PROJECT_DIR$/views/layout.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.0582011">
+        <state line="28" column="25" selection-start="1007" selection-end="1007" vertical-scroll-proportion="-17.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/less/go.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="14" selection-start="598" selection-end="598" vertical-scroll-proportion="0.9020619">
           <folding />
         </state>
       </provider>

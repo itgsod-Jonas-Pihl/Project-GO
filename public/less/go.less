@@ -1,40 +1,37 @@
 @import "../../bower_components/bootstrap/less/bootstrap.less";
 @import "../../bower_components/bootstrap/less/normalize.less";
 
-@red: #ff0000;
-@green: #00ff00;
-@blue: #0000ff;
-@height: 70px;
-
 #headcontainer {
   padding: 0;
   width: 100%;
   display: table;
-  height: @height;
+  height: 70px;
   background-color: @gray-dark;
 }
 
-#header {
+#menucontainer {
+  background-color: @gray-light;
+  height: 34px;
+  width: 100%;
+  display: table;
+  padding: 0;
+}
+
+#header, #menu {
   height: 100%;
   display: table-cell;
   vertical-align: middle;
 }
 
-#steambutton {
+.btn {
+  height: 34px;
+  padding: 0;
+  border-radius: 0;
+  background-color: @gray-light;
+
 }
 
-#red, #green, #blue {
-  height: @height;
-}
-
-#red {
-  background-color: @red;
-}
-
-#green {
-  background-color: @green;
-}
-
-#blue {
-  background-color: @blue;
+.btn:hover {
+  background-color: @gray-dark;
+  color: #fff;
 }
