@@ -1,8 +1,8 @@
 class User
   include DataMapper::Resource
 
-  property :steamid, String, :key => true
+  property :steamid, Integer, :key => true
   property :name, String
-  property :banned, Boolean
-  property :admin, Boolean
+  property :banned, Boolean, :default => false
+  property :admin, Boolean, :default => true
 end

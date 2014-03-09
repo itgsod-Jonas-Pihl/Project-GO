@@ -1,1 +1,1 @@
-User.create(steamid: 123, name:'hejhej', banned: 0, admin: 1)
+User.create(steamid: 76561198021297360, name:'Rrrrrrerun Rrrrrackup', banned: 0, admin: 1)

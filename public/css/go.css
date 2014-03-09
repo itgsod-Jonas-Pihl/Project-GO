@@ -5846,3 +5846,12 @@ th {
     margin-left: 8.33333333%;
   }
 }
+#foroforheader {
+    text-shadow: 0px -1px 0px #374683;
+    font-size: 300px;
+    margin-left: 32%;
+    margin-top: 15%;
+    margin-right: 15%;
+    color: darkred;
+    font-family: 'Oswald', sans-serif;
+}

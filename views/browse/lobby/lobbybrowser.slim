@@ -16,4 +16,7 @@ form action="/createlobby" method="post"
   -for lobby in @lobby_list
       a href="../lobby/#{lobby['id']}"
        p = lobby['name']
-      p = "#{lobby['players']}/#{lobby['slots']}"
+      p id="#{lobby['id']}" = "#{lobby['players']}/#{lobby['slots']}"
+
+
+
