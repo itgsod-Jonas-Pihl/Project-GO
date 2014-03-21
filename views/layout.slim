@@ -2,33 +2,40 @@ doctype html
 html
   head
     meta charset='utf-8'
-    link rel="stylesheet/css" type="text/css" href="css/go.css"
-    /link rel="stylesheet/less" type="text/css" href="less/go.less"
+    link href="../css/go.css" type="text/css" rel='stylesheet'
     script src="js/less.js" type="text/javascript"
     meta http-equiv="X-UA-Compatible" content="IE=edge"
     meta name="viewport" content="width=device-width, initial-scale=1"
     script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"
     script src= 'localhost:9292/faye.js'
     title Gamers Online
-    link href="css/go.css" rel='stylesheet'
+
   body
     .container-fluid#headcontainer
       .row-fluid#header
         .col-xs-4#logo
         .col-xs-4#search
+          form action ='/search' method ='get'
+                input type='text' name='title'
+                input type="submit" value="Search"
         .col-xs-2.col-xs-offset-2#steambutton
-          a href='/auth/steam'
-            img src='https://steamcommunity.com/public/images/signinthroughsteam/sits_small.png'
+          -if session[:steamid] == nil
+            a href='/auth/steam'
+              img src='https://steamcommunity.com/public/images/signinthroughsteam/sits_small.png'
+
     .container-fluid#menucontainer
       .row-fluid#menu
         .col-xs-4.col-xs-offset-4
           .btn-group.btn-group-justified
             .btn-group
-              button.btn Profile
+              a href='../profile'
+                button.btn Profile
             .btn-group
-              button.btn Browse
+              a href='../browse'
+                button.btn Browse
             .btn-group
               button.btn Community
+
 
 
     script src="js/less.js" type="text/javascript"

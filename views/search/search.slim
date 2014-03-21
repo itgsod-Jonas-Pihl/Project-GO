@@ -1,0 +1,5 @@
+-for game in @game_list
+      a href="../browse/#{game['appid']}"
+        img src="http://media.steampowered.com/steamcommunity/public/images/apps/#{game['appid']}/#{game['logo']}.jpg"
+-if @game_list[0] == nil
+  h3 No result found

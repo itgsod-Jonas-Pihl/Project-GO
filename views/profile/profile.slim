@@ -1,3 +1,25 @@
--for game in @game_list
-      a href="../browse/#{game['appid']}"
-        img src="http://media.steampowered.com/steamcommunity/public/images/apps/#{game['appid']}/#{game['logo']}.jpg"
+link href="http://localhost:9292/css/jonasGO.css" rel='stylesheet'
+
+
+#profile
+
+h1#test test!!!
+
+hr
+
+#gamecontainer
+  h1#gamestext Your games
+  -for game in @games
+        .gamethumbs
+          a.test href="../browse/#{game['appid']}"
+            img.thumb src="http://media.steampowered.com/steamcommunity/public/images/apps/#{game['appid']}/#{game['logo']}.jpg"
+            .information_hover
+              p lobbies: #{game.lobbies.count}
+
+/javascript:
+/  $( ".gamethumbs" ).mouseenter(function() {
+/    $("#test").hide();
+/  });
+/  $(".gamethumbs").mouseleave(function() {
+/    $("#test").show();
+/  });

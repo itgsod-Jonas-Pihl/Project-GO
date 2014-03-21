@@ -24,38 +24,23 @@ class GamersOnline < Sinatra::Base
   set :show_exceptions, false
 
   enable :sessions
-
   get '/' do
-
+    session['steamid'] = 76561198021297355
     unless session['steamid'] == nil
-
-      #gets all the owned games from the use (If the profile is set to public)
-      @games = JSON.parse(Net::HTTP.get(URI("http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=#{api_key}&steamid=#{session['steamid']}&include_appinfo=1&include_played_free_games=1")))['response']['games']
-
-
-      @games.each do |game|
-        #looks at the database (in the game tabel). If the game isnt there it adds it with appid, name and logo_url
-        if Game.get(game['appid']) == nil
-          Game.create(appid: game['appid'], title: game['name'], logo: game['img_logo_url'])
-        end
-
-        #looks at the database again (in the OwnedGames tabel). If there isnt there it adds it
-        if OwnedGames.first(:game_appid => game['appid'], :user_steamid => session['steamid']) == nil && game['img_logo_url'].length >= 5
-          OwnedGames.create(game_appid: game['appid'], user_steamid: session['steamid'])
-        end
-      end
+        #lets the game model handel importing new games to the database
+        Game.import_games(session[:steamid])
     end
 
     slim :frontpage
   end
 
-  #when the steam login gets back
+  #the data that gets back from steams openid login
   post '/auth/steam/callback' do
-    @openid = request.env["omniauth.auth"].extra.raw_info.to_hash
-    session[:steamid] = @openid['steamid'].to_i
+    openid = request.env["omniauth.auth"].extra.raw_info.to_hash
+    session[:steamid] = openid['steamid']
 
     #checks if the user is in the database
-    user = User.get(@openid['steamid'].to_i)
+    user = User.get(openid['steamid'].to_i)
     if user == nil
       redirect '/register'
     elsif user['banned'] == true
@@ -71,7 +56,7 @@ class GamersOnline < Sinatra::Base
   end
 
   post '/register' do
-    User.create(steamid: params[:steamid], name: params[:username])
+    User.new_user(params[:steamid],  params[:username])
     redirect '/'
   end
 
@@ -82,9 +67,8 @@ class GamersOnline < Sinatra::Base
       @user = User.first(steamid: session[:steamid])
       #lobby information gets fetched from the database
       @lobby = Lobby.first(id: lobby_id)
-      #updates the lobby to display +1 player
       #game information gets fetched from the database
-      @game = Game.first(appid: @lobby[:game_appid])
+      @game = @lobby.game
 
       unless @lobby['players'] >= @lobby['slots']
         @lobby.update(:players => @lobby['players'] + 1)
@@ -100,26 +84,8 @@ class GamersOnline < Sinatra::Base
   get '/profile' do
     unless session[:steamid] == nil
       #fetches all owned games of the user from the database
-      @games = OwnedGames.all(user_steamid: session[:steamid])
-      @game_list = []
-      @friend_list
-      #puts the game information in a hash in an array
-      @games.each do |game|
-        result = Game.first(appid: game['game_appid'])
-        game_info = { "appid" => result['appid'], "title" => result['title'], "logo" => result['logo']}
-        @game_list << game_info
-      end
-
-      friends = Friend.all(user_steamid: session[:steamid])
-
-      unless friends == nil
-        friends.each do |friend|
-          result = User.first(steamid: friend['friend_user_steamid'])
-          user_info = {"steamid" => result['steamid'], "name" => result['name']}
-          @friend_list << user_info
-        end
-      end
-
+      user = User.first(steamid: session[:steamid])
+      @games = user.games
       slim :'/profile/profile'
     else
       redirect '/'
@@ -127,21 +93,22 @@ class GamersOnline < Sinatra::Base
   end
 
   get '/browse/:id' do |id|
+    @lobby_list = []
     unless session[:steamid] == nil
-      @lobby_list = []
       @game = Game.first(appid: id)
       @lobbys = Lobby.all(game_appid: id)
 
-      @lobbys.each do |lobby|
-        if lobby['players'] == 0
-          lobby.destroy
-        end
+      unless @lobbys[0] == nil
+        @lobbys.each do |lobby|
+          if lobby['players'] == 0
+            lobby.destroy
+          end
 
-        unless lobby['players'].to_i >= lobby['slots'].to_i
-          @lobby_list << @lobby_info = {"id" => lobby[:id], "name" => lobby[:name], "slots" => lobby[:slots], "players" => lobby[:players], "game_appid" => lobby[:game_appid]}
+          unless lobby['players'].to_i >= lobby['slots'].to_i
+            @lobby_list << @lobby_info = {"id" => lobby[:id], "name" => lobby[:name], "slots" => lobby[:slots], "players" => lobby[:players], "game_appid" => lobby[:game_appid]}
+          end
         end
       end
-
       slim :'/browse/lobby/lobbybrowser'
     else
       redirect '/'
@@ -149,8 +116,8 @@ class GamersOnline < Sinatra::Base
   end
 
   post '/createlobby' do
-    test = Lobby.create(name: params[:name], game_appid: params[:appid].to_i, slots: params[:slots].to_i, players: 0)
-    redirect "/lobby/#{test['id']}"
+    lobby = Lobby.create(name: params[:name], game_appid: params[:appid].to_i, slots: params[:slots].to_i, players: 0)
+    redirect "/lobby/#{lobby['id']}"
   end
 
   get '/admin' do
@@ -178,6 +145,21 @@ class GamersOnline < Sinatra::Base
 
   not_found do
     slim :'404', :layout => false
+  end
+
+  get '/search' do
+    @games = Game.all(title: params['title'])
+
+      slim :'search/search'
+  end
+
+  get '/browse' do
+    @games = Game.all
+    unless session['steamid'] == nil
+      user = User.first(steamid: session[:steamid])
+      ownedgames = user.games
+    end
+    slim :'browse/browse'
   end
 end
 

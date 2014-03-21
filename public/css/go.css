@@ -5857,3 +5857,6 @@ th {
     color: darkred;
     font-family: 'Oswald', sans-serif;
 }
+#create {
+    display: none;
+}

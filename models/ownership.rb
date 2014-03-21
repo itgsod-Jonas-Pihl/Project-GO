@@ -1,4 +1,4 @@
-class OwnedGames
+class Ownership
   include DataMapper::Resource
 
   belongs_to :user, :key=> true
