@@ -1,43 +1,61 @@
-
-
+link href="../css/jonasGO.css" rel='stylesheet'
 script src="/faye.js"
+
+h1#gamename = @game['title']
+h1#lobbyname = @lobby['name']
+
+button#leave Leave lobby
+
+a href='steam://exit'
+  h1 Click heree!!!!!
+
+div#players
 
 div#chatbox
 
   input type='hidden' id='channel' value=@lobby['id']
   input type='hidden' id='nickname' value="#{@user['name']}"
   #messages
-  input type='text' id='content_message'
-  input type='button' onclick ='say_hi()' value='send' id="send_button"
+input type='text' id='content_message'
+input type='button' onclick ='say_hi()' value='send' id="send_button"
 
-  javascript:
-    var client = new Faye.Client('http://#{request.host}:#{request.port}/faye')
 
-    var channel = "/"+document.getElementById('channel').value;
 
-    client.subscribe(channel, function(message) {
-      document.getElementById('messages').innerHTML += "<p>" + message.nickname + " : " + message.text + "</p>";
-      document.getElementById('messages').scrollTop = 10000;
+javascript:
+  var client = new Faye.Client('http://#{request.host}:#{request.port}/faye')
+  var channel = "/"+document.getElementById('channel').value;
+
+  client.subscribe(channel, function(message) {
+        document.getElementById(message.element).innerHTML += message.message;
+        document.getElementById('chatbox').scrollTop = 10000;
     });
 
-    client.on('subscribe', function(clientId, channel) {
+  $(document).ready(function() {
+      var nick = document.getElementById('nickname').value;
+      var message = "<p>" + nick + " has joined the lobby! </p>";
+      client.publish(channel, {message : message, element : 'messages'});
 
+      var player = "<p class='players'>" + nick + "</p>";
+
+      client.publish(channel, {message: player, element : 'players'});
     });
 
-
-    document.getElementById("content_message").addEventListener( "keydown", function( e ) {
+  document.getElementById("content_message").addEventListener( "keydown", function( e ) {
         var keyCode = e.keyCode || e.which;
         if ( keyCode === 13 ) {
            say_hi();
         }
-    }, false);
+  }, false);
 
-    function say_hi() {
+  function say_hi() {
       var text = document.getElementById('content_message').value;
       var nick = document.getElementById('nickname').value;
+      var message = "<p>" + nick + " : " + text + "</p>";
+
+
       content_message.value= ""
       document.getElementById('content_message').focus()
-      client.publish(channel, {text: text, nickname: nick});
+      client.publish(channel, {message : message, element : 'messages'});
       document.getElementById("text").focus();
-    }
+  }
 

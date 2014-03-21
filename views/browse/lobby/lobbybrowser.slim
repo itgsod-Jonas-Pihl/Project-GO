@@ -1,19 +1,34 @@
+link href="http://localhost:9292/css/jonasGO.css" rel='stylesheet'
+script src="http://localhost:9292/js/bootstrap/modal.js"
+
 h1 = @game['title']
 img src="http://media.steampowered.com/steamcommunity/public/images/apps/#{@game['appid']}/#{@game['logo']}.jpg"
 
-button type='button' onclick='showDiv()' Create lobby
+button type='button' id='test' Create lobby
+
+#myModal.modal.fade aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1"
+  .modal-dialog.modal-sm
+    .modal-content
+      .modal-header
+        button.close aria-hidden="true" data-dismiss="modal" type="button"  &times;
+      .modal-body
+          form action="/createlobby" method="post"
+            input type='hidden' name='appid' value="#{@game['appid']}"
+            input type='text' name='name' placeholder='Lobby name'
+            select name='slots'
+                option value= 1000000000
+            button id="lobbysubmit"type="submit" Create lobby!
 
 
-form action="/createlobby" method="post"
-  input type='hidden' name='appid' value="#{@game['appid']}"
-  input type='text' name='name' placeholder='Lobby name'
-  select name='slots'
-    -30.times do |i|
-      option value=i #{i}
-  button type="submit" Create lobby!
 
 -unless @lobby_list == nil
   -for lobby in @lobby_list
       a href="../lobby/#{lobby['id']}"
        p = lobby['name']
-      p = "#{lobby['players']}/#{lobby['slots']}"
+      p id="#{lobby['id']}" = "#{lobby['players']}/#{lobby['slots']}"
+
+
+javascript:
+  $( "#test" ).click(function() {
+    $('#myModal').modal()
+  });

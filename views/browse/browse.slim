@@ -1,0 +1,9 @@
+link href="http://localhost:9292/css/jonasGO.css" rel='stylesheet'
+h1 = session[:steamid]
+
+-for game in @games
+          .gamethumbs
+            a.test href="../browse/#{game['appid']}"
+              img.thumb src="http://media.steampowered.com/steamcommunity/public/images/apps/#{game['appid']}/#{game['logo']}.jpg"
+              - if game.users(steamid: session[:steamid]) != nil
+                p this is somehow working

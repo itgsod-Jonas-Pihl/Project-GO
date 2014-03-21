@@ -1,0 +1,5 @@
+-for user in @users
+  p = user['name']
+  form action='../admin/ban' method='post'
+    input type='hidden' name='id' value="#{user['steamid']}"
+    input type='submit' value='Ban' id ='ban_button'
