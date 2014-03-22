@@ -25,7 +25,7 @@ class GamersOnline < Sinatra::Base
 
   enable :sessions
   get '/' do
-    session['steamid'] = 76561198021297355
+    #session['steamid'] = 76561198021297355
     unless session['steamid'] == nil
         #lets the game model handel importing new games to the database
         Game.import_games(session[:steamid])

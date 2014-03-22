@@ -14,9 +14,9 @@ html
           a href="/"
             span.glyphicon.glyphicon-cutlery
         .col-xs-4#search
-          form action ='/search' method ='get'
-                input type='text' name='title'
-                input type="submit" value="Search"
+          form action='/search' method='get'
+            input type='text' name='title'
+            input type="submit" value="Search"
         .col-xs-2.col-xs-offset-2#steambutton
           -if session[:steamid] == nil
             a href='/auth/steam'
@@ -28,7 +28,7 @@ html
           .btn-group.btn-group-justified
             .btn-group
               a href="/profile"
-                button.btn Profile
+                button.btn Profilefv
             .btn-group
               a href="/browse"
                 button.btn Browse
@@ -39,3 +39,14 @@ html
     script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"
     script src="js/bootstrap.js"
     script src="localhost:9292/faye.js"
+
+    /javascript to show the chevrons for changing slides in the carousel on mouseover
+    javascript:
+      $("div.carousel").hover(
+        function () {
+          $(".hover-show").show();
+        },
+        function () {
+          $(".hover-show").hide();
+        }
+      );
