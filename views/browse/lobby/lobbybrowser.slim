@@ -1,10 +1,10 @@
-link href="http://localhost:9292/css/jonasGO.css" rel='stylesheet'
-script src="http://localhost:9292/js/bootstrap/modal.js"
+link href="/css/jonasGO.css" rel='stylesheet'
+script src="/js/bootstrap/modal.js"
 
 h1 = @game['title']
 img src="http://media.steampowered.com/steamcommunity/public/images/apps/#{@game['appid']}/#{@game['logo']}.jpg"
 
-button type='button' id='test' Create lobby
+button type='button' data-toggle="modal" data-target="#myModal" id='test' Create lobby
 
 #myModal.modal.fade aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1"
   .modal-dialog.modal-sm

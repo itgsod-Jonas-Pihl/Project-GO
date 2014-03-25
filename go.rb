@@ -25,7 +25,7 @@ class GamersOnline < Sinatra::Base
 
   enable :sessions
   get '/' do
-    session['steamid'] = 76561198021297355
+    session[:steamid] = 76561198021297355
     unless session['steamid'] == nil
         #lets the game model handel importing new games to the database
         Game.import_games(session[:steamid])
@@ -84,8 +84,8 @@ class GamersOnline < Sinatra::Base
   get '/profile' do
     unless session[:steamid] == nil
       #fetches all owned games of the user from the database
-      user = User.first(steamid: session[:steamid])
-      @games = user.games
+      @user = User.first(steamid: session[:steamid])
+      @games = @user.games
       slim :'/profile/profile'
     else
       redirect '/'
@@ -161,5 +161,10 @@ class GamersOnline < Sinatra::Base
     end
     slim :'browse/browse'
   end
+
+  post '/carousel_content' do
+
+  end
+
 end
 
